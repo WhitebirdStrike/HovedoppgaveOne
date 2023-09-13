@@ -6,18 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binding of isaac</title>
     <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
   </head>
   <body class="bodyOfSite">
     <div class="navbar">
       <a href="/index.html">Home</a>
       <a href="/about.html">About</a>
       <a href="/resources.html">Resources</a>
-      <a href="/items.html">Items</a>
-      <a href="/bosses.html">Bosses</a>
-    </div>
+      <div class="dropdown2">
+        <button class="bossButton2" onclick="myFunction2()">Items</button>
+        <div id="myDropdown2" class="dropdown-content2">
+          <a href="/tmTrainer.html">Tmtrainer</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="bossButton" onclick="myFunction()">Bosses</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="/bosses.html">Bloat</a>
+          <a href="/delirium.html">Delirium</a>
+        </div>
+      </div>
+      </div>
     <h1>Items</h1>
     <div>
-      <p>
+      <p class="globalText">
         So in the case of items, there has been alot of items which was either
         completely useless, or made the game substantially harder. The D10 was
         one of those abysmal items.<br />It had the unique ability to reroll
@@ -43,7 +55,8 @@
         "TmTrainer" is the most chaotic item in the game by a landslide.
         Basicly, it makes newly encountered items a random selection of 2-3 effects together, this may also be effects that you would not have on any item that exists in the game,
         like spawning enemies or objects, even unused sprites and such. The big problem with this item is that since it has basicly infinite possitibilites,
-        that also means that it is a really unstable also. Some items that you pick up just crash your game, or makes so slow that it because unplayable.
+        that also means that it is a really unstable also. Some items that you pick up just crash your game, or makes so slow that it becomes unplayable.
+        
       </p>
     </div>
     <p></p>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binding of isaac</title>
     <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
   </head>
   <body class="bodyOfSite">
     <div class="navbar">
@@ -13,10 +14,12 @@
       <a href="/about.html">About</a>
       <a href="/resources.html">Resources</a>
       <a href="/items.html">Items</a>
-      <button class="bossButton" onclick="toggleMeTwo()">Bosses</button>
-      <div id="imDaToggle" class="hideMe">
-        <a href="/bosses.html">Bloat</a>
-        <a href="/delirium.html">Delirium</a>
+      <div class="dropdown">
+        <button class="bossButton" onclick="myFunction()">Bosses</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="/bosses.html">Bloat</a>
+          <a href="/delirium.html">Delirium</a>
+        </div>
       </div>
     </div>
     <div>
@@ -31,7 +34,7 @@
         have to fight it at some point.
       </p>
 
-      <p>
+      <p class="globalText">
         The worst thing about all this is that if you want to be guaranteed to
         fight him, you have to beat "It Lives" in under 30 min, then fight one
         of the hardest bosses in the game, while having to skip either the chest

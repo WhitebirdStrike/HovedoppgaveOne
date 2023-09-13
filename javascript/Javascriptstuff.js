@@ -31,3 +31,17 @@ window.onclick = function (event) {
     }
   }
 };
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show2");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches(".bossButton2")) {
+    let myDropdown = document.getElementById("myDropdown2");
+    if (myDropdown.classList.contains("show2")) {
+      myDropdown.classList.remove("show2");
+    }
+  }
+};

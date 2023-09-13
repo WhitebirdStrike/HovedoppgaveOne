@@ -6,26 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binding of isaac</title>
     <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
   </head>
   <body class="bodyOfSite">
-    <div class="navbar">
+    <div class="nav">
       <a href="/index.html">Home</a>
       <a href="/about.html">About</a>
       <a href="/resources.html">Resources</a>
-      <a href="/items.html">Items</a>
-      <a href="/bosses.html">Bosses</a>
+      <div class="dropdown2">
+        <button class="bossButton" onclick="myFunction2()">Items</button>
+        <div id="myDropdown2" class="dropdown-content2">
+          <a href="/tmTrainer.html">Tmtrainer</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="bossButton" onclick="myFunction()">Bosses</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="/bosses.html">Bloat</a>
+          <a href="/delirium.html">Delirium</a>
+        </div>
+      </div>
     </div>
     <h1>The binding of isaac</h1>
+    <p class="globalText">Links to sources i have used:</p>
+
     <div>
-      <p>
-        The purspose of this site is to go over some of the game most infamous
-        things, all the way back from Rebirth to Repentance
-      </p>
+      <ul>
+        <li class="links">
+          <a
+            href="https://bindingofisaacrebirth.fandom.com/wiki/The_Bloat?so=search"
+            >Bloat</a
+          >
+          <a
+            href="https://bindingofisaacrebirth.fandom.com/wiki/Delirium?so=search"
+            >Delirium</a
+          >
+        </li>
+      </ul>
     </div>
-    <p>
-      These things may vary from characters that were either unreasonable
-      difficult or broken to items that were useless or gamebreaking.
-    </p>
+
     <div class="footerCss" style="background-color: aquamarine">
       Dette blir min footer
     </div>
