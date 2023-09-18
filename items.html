@@ -14,23 +14,31 @@
         <li><a href="/index.html">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/resources.html">Resources</a></li>
-       <li><div class="dropdown2">
-            <button class="bossButton2" onclick="myFunction2()">Items</button>
-          <div id="myDropdown2" class="dropdown-content2">
-            <a href="/tmTrainer.html">Tmtrainer</a>
+        <li>
+          <div class="drop">
+            <button class="bossButton2" onclick="toggleDropdown('myDropdown2')">
+              Items
+            </button>
+            <div id="myDropdown2" class="dropdown-content2">
+              <a href="/tmTrainer.html">Tmtrainer</a>
+              <br />
+              <a href="/Damocles.html">Damocles</a>
+            </div>
           </div>
         </li>
-      </div>
-       
 
-        <li><div class="dropdown">
-            <button class="bossButton" onclick="myFunction()">Bosses</button>
+        <li>
+          <div class="dropdown">
+            <button class="bossButton" onclick="toggleDropdown('myDropdown')">
+              Bosses
+            </button>
             <div id="myDropdown" class="dropdown-content">
               <a href="/bosses.html">Bloat</a>
+              <br />
               <a href="/delirium.html">Delirium</a>
             </div>
-          </li>
-        </div>
+          </div>
+        </li>
       </ul>
     </nav>
     <h1>Items</h1>

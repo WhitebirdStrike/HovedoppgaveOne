@@ -3,7 +3,6 @@
   background-color: #333;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav a {
@@ -14,6 +13,7 @@
   padding: 14px 16px;
   text-decoration: none;
 }
+
 .nav-list {
   display: flex;
   justify-content: space-evenly;
@@ -30,9 +30,14 @@
   position: absolute;
   min-width: 160px;
   z-index: 1;
+  margin-top: 0px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   color: white;
   padding: 1px;
+}
+
+.show {
+  display: block;
 }
 
 .bossButton {
@@ -51,24 +56,42 @@
 .bossButton:hover {
   background-color: red;
 }
-
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 5px 0px;
+  padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 li button {
   box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
+.nav-list li a {
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .drop {
   float: left;
   overflow: hidden;
   box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .drop .bossButton2 {
@@ -83,6 +106,7 @@ li button {
   margin: 0;
 }
 
+.nav a:hover,
 .drop:hover .bossButton2,
 .bossButton2:focus {
   background-color: red;
@@ -95,18 +119,21 @@ li button {
   max-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  padding: 0px;
 }
 
 .dropdown-content2 a {
-  display: block;
   float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
+  display: block;
   text-align: center;
 }
 
 .dropdown-content2 a:hover {
   background-color: red;
+}
+
+.show2 {
+  display: block;
 }

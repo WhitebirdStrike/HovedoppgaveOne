@@ -9,6 +9,13 @@ body {
   background-color: brown;
   opacity: 1;
 }
+
+.pageformat {
+  margin: 0px auto 0px auto;
+  width: 90%;
+  margin-top: 50px;
+}
+
 .globalText {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
