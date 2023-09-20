@@ -59,10 +59,10 @@
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 5px 0px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 li button {
@@ -119,14 +119,15 @@ li button {
   max-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  padding: 0px;
 }
 
 .dropdown-content2 a {
+  display: block;
   float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
   text-align: center;
 }
 
@@ -136,4 +137,9 @@ li button {
 
 .show2 {
   display: block;
+}
+
+.dropdown-content,
+.dropdown-content2 {
+  display: none;
 }
