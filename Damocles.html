@@ -17,7 +17,9 @@
         <li><a href="/resources.html">Resources</a></li>
         <li>
           <div class="drop">
-            <button class="bossButton2" onclick="myFunction2()">Items</button>
+            <button class="bossButton2" onclick="toggleDropdown('myDropdown2')">
+              Items
+            </button>
             <div id="myDropdown2" class="dropdown-content2">
               <a href="/tmTrainer.html">Tmtrainer</a>
               <a href="/Damocles.html">Damocles</a>
@@ -27,7 +29,9 @@
 
         <li>
           <div class="dropdown">
-            <button class="bossButton" onclick="myFunction()">Bosses</button>
+            <button class="bossButton" onclick="toggleDropdown('myDropdown')">
+              Bosses
+            </button>
             <div id="myDropdown" class="dropdown-content">
               <a href="/bosses.html">The Bloat</a>
               <a href="/delirium.html">Delirium</a>
@@ -39,14 +43,23 @@
     <div class="flexDamocles">
       <div class="contentDamocles">
         <div class="Damocles">
-          <img src="/images/Damocles.webp" alt="Damocles" />
+          <img
+            class="enlargeable"
+            src="/images/Damocles.webp"
+            alt="Click to enlarge"
+            id="pictureTmtrainer"
+            onclick="enlargeImage()"
+          />
           <div>"A kings fortune..., but at what cost?"</div>
+          <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="enlargedImg" />
+          </div>
         </div>
       </div>
     </div>
     <section class="pageformat">
       <h1>Damocles</h1>
-      <p>"A kings fortune..., but at what cost?"</p>
       <p>
         Damocles is a extremely risky item that have the ability to turn a bad
         run into a good run, but also completely ruin it. It is an active item
@@ -75,5 +88,6 @@
       </div>
     </section>
     <script src="/javascript/Javascriptstuff.js"></script>
+    <script src="/javascript/Pictures.js"></script>
   </body>
 </html>
