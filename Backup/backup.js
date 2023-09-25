@@ -53,3 +53,24 @@ window.onclick = function (event) {
     }
   }
 };
+
+function enlargeImage() {
+  let modal = document.getElementById("myModal");
+  let img = document.getElementById("pictureTmtrainer");
+  let modalImg = document.getElementById("enlargedImg");
+
+  modal.style.display = "block";
+  modalImg.src = Tmtrainer.webp;
+}
+
+function closeModal() {
+  let modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
+// Add a click event listener to each image with the "enlargeable" class
+document.querySelectorAll(".enlargeable").forEach(function (img) {
+  img.addEventListener("click", function () {
+    enlargeImage(img.src);
+  });
+});

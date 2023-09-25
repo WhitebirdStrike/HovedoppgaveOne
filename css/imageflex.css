@@ -2,12 +2,10 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  border: 2px solid red;
   flex-direction: column;
 }
 
 .Damocles {
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -40,14 +38,14 @@
   align-items: flex-end;
   position: right;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 0px;
   left: 0px;
   top: 0;
-  width: 50%;
-  height: 50%;
-  background-color: rgba(0, 0, 0, 0.9);
-  text-align: center;
+  width: 10%;
+  height: 30%;
+  text-align: right;
   border: 2px solid green;
+  opacity: 0px;
 }
 
 .modal-content {
@@ -68,11 +66,11 @@
 }
 
 #pictureTmtrainer {
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   width: max-content; /* Adjust the width as needed */
+  cursor: pointer;
 }
 
 #pictureTmtrainer > img {
@@ -83,6 +81,35 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  border: 2px solid red;
   flex-direction: column;
+  cursor: pointer;
+}
+
+.bloatflex {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fade-in-image {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  opacity: 25%;
+  border: 2px solid green;
+  transition: opacity 1s;
+}
+
+.fade-in-image > img {
+  align-self: flex-end;
+}
+
+.fade-in-image:hover {
+  opacity: 100%;
+  transition: opacity 1s;
 }
