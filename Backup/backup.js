@@ -74,3 +74,7 @@ document.querySelectorAll(".enlargeable").forEach(function (img) {
     enlargeImage(img.src);
   });
 });
+
+function functionsubmit() {
+  alert("Meldingen har blitt sendt");
+}

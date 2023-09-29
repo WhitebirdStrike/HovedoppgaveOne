@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/links.css" />
     <link rel="stylesheet" href="/css/imageflex.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
   </head>
   <body class="bodyOfSite">
+    <div class="logo">
+      <img class="isaacLogo" src="images/Biblethump.png" alt="Logo" />
     <nav class="nav">
       <ul class="nav-list">
         <li><a href="/index.html">Home</a></li>
@@ -37,6 +40,31 @@
             <div id="myDropdown" class="dropdown-content">
               <a href="/bosses.html">The Bloat</a>
               <a href="/delirium.html">Delirium</a>
+              <li>
+                <button id="kontaktBtn" class="btnKontakt">Kontakt oss</button>
+                <!-- The Modal -->
+                <div id="kontaktjs" class="kontaktmodal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form>
+                      <label for="fname">First name:</label><br />
+                      <input type="text" id="fname" name="fname" value="" /><br />
+                      <label for="lname">Last name:</label><br />
+                      <input type="text" id="lname" name="lname" value="" /><br />
+                      <label for="epost">Epost</label><br />
+                      <input type="text" id="fname" name="epost" value="" /><br />
+                      <label for="password">Password</label><br>
+                      <input type="text" id="pass" name="passowrd" value=""><br>
+                      <label for="description">Description</label><br />
+                      <input
+                        type="text"
+                        id="desctriptiontext"
+                        name="descriptiontext"
+                        value=""
+                        style="width: 300px; height: 100px;"
+                      />
+                      <input type="submit" value="Submit" />
             </div>
           </div>
         </li>
