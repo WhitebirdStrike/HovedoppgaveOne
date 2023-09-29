@@ -113,3 +113,9 @@
   opacity: 100%;
   transition: opacity 1s;
 }
+
+.isaacLogo {
+  display: flex;
+  width: 5%;
+  height: 5%;
+}

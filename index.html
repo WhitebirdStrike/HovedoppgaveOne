@@ -7,8 +7,13 @@
     <title>Binding of isaac</title>
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/imageflex.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
   </head>
   <body class="bodyOfSite">
+    <div class="logo">
+      <img class="isaacLogo" src="images/Biblethump.png" alt="Logo" />
+    </div>
     <nav class="nav">
       <ul class="nav-list">
         <li><a href="/index.html">Home</a></li>
@@ -38,8 +43,35 @@
             </div>
           </div>
         </li>
+        <li>
+          <button id="kontaktBtn" class="btnKontakt">Kontakt oss</button>
+          <!-- The Modal -->
+          <div id="kontaktjs" class="kontaktmodal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <form>
+                <label for="fname">First name:</label><br />
+                <input type="text" id="fname" name="fname" value="" /><br />
+                <label for="lname">Last name:</label><br />
+                <input type="text" id="lname" name="lname" value="" /><br />
+                <label for="epost">Epost</label><br />
+                <input type="text" id="fname" name="epost" value="" /><br />
+                <label for="description">Description</label><br />
+                <input
+                  type="text"
+                  id="desctriptiontext"
+                  name="descriptiontext"
+                  value=""
+                />
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </div>
+        </li>
       </ul>
     </nav>
+
     <section class="pageformat">
       <h1>Headline</h1>
       <p>
@@ -55,5 +87,6 @@
       Dette blir min footer
     </div>
     <script src="/javascript/Javascriptstuff.js"></script>
+    <script src="/javascript/modal.js"></script>
   </body>
 </html>
