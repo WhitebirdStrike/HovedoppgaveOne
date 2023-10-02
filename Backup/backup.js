@@ -86,3 +86,29 @@ if (descriptionInput.value.trim() !== "") {
   // If the input field is empty, display a validation message
   validationMessage.textContent = "Please enter a description.";
 }
+
+function validateForm() {
+  const formName = document.getElementById("fname").value;
+  const formLastName = document.getElementById("lname").value;
+  const formEpost = document.getElementById("epost").value;
+  const formPassword = document.getElementById("pass").value;
+  const formDescription = document.getElementById("descriptiontext").value;
+
+  console.log(formName);
+
+  if (
+    formName.trim() === "" ||
+    formLastName.trim() === "" ||
+    formEpost.trim() === "" ||
+    formPassword.trim() === "" ||
+    formDescription.trim() === ""
+  ) {
+    alert("Sorry, please fill out the form completely.");
+    return false; // Prevent form submission
+  }
+
+  // Additional validation logic can be added here if needed.
+
+  alert("Message is sent");
+  return true; // Allow the form to be submitted
+}
