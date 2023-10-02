@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/imageflex.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
   </head>
   <body class="bodyOfSite">
     <nav class="nav">
@@ -39,6 +40,35 @@
             </div>
           </div>
         </li>
+        <li>
+          <button id="kontaktBtn" class="btnKontakt">Kontakt oss</button>
+          <!-- The Modal -->
+          <div id="kontaktjs" class="kontaktmodal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <form>
+                <label for="fname">First name:</label><br />
+                <input type="text" id="fname" name="fname" value="" /><br />
+                <label for="lname">Last name:</label><br />
+                <input type="text" id="lname" name="lname" value="" /><br />
+                <label for="epost">Epost</label><br />
+                <input type="text" id="fname" name="epost" value="" /><br />
+                <label for="password">Password</label><br />
+                <input type="text" id="pass" name="passowrd" value="" /><br />
+                <label for="description">Description</label><br />
+                <input
+                  type="text"
+                  id="desctriptiontext"
+                  name="descriptiontext"
+                  value=""
+                  style="width: 300px; height: 100px"
+                />
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </div>
+        </li>
       </ul>
     </nav>
 
@@ -61,10 +91,20 @@
         the whole fight very hectic.
       </p>
     </section>
-    <div class="footerCss" style="background-color: aquamarine">
-      Dette blir min footer
-    </div>
+    <ul class="footerCss" style="background-color: aquamarine">
+      <p>Links</p>
+      <a target="_blank" href="https://www.facebook.com/getfandom"
+        ><img src="images/Facebook.webp" class="facebookimg"
+      /></a>
+      <a target="_blank" href="https://twitter.com/getfandom"
+        ><img src="images/Twitter.png" class="twitterimg"
+      /></a>
+      <a target="_blank" href="https://www.youtube.com/fandomentertainment"
+        ><img src="images/Youtube.png" class="youtubeimg"
+      /></a>
+    </ul>
     <script src="/javascript/Javascriptstuff.js"></script>
     <script src="javascript/Pictures.js"></script>
+    <script src="/javascript/modal.js"></script>
   </body>
 </html>

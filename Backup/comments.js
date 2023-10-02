@@ -1,0 +1,2 @@
+/*&& betyr "og"*/
+/* || betyr "eller"*/
