@@ -135,3 +135,15 @@
   align-items: center;
   flex-direction: column;
 }
+
+.transformations {
+  display: flex;
+  width: 50%;
+  height: 50%;
+}
+
+.steamimg {
+  display: flex;
+  width: 50%;
+  height: 50%;
+}

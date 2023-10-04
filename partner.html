@@ -76,12 +76,62 @@
         </li>
       </ul>
     </nav>
-    <section class="part">
+    <section class="part pageformat">
       <h1>Our partners:</h1>
-      <img class="fandomImg" scr="images/Fandom.jpg" alt="fandom" />
+      <br />
+      <p>Fandom</p>
+      <img
+        id="fandomid"
+        class="fandomImg"
+        src="images/Fandom.jpg"
+        alt="fandom"
+        onclick="openModal2()"
+      />
+      <div id="modal2" class="modalfandom">
+        <img
+          id="fandomid"
+          class="fandomImg"
+          src="images/Fandom.jpg"
+          alt="fandom"
+          onclick="openModal2()"
+        />
+
+        <div id="modalfandom" class="modalclassfandom">
+          <span class="closefandom" onclick="closeModal2()">&times;</span>
+          <img class="modalcontentfandom" id="modalImagefandom" />
+        </div>
+      </div>
+      <br />
+      <p>Steam</p>
+      <br />
+      <img
+        id="steamId"
+        class="steamImg"
+        src="/images/Steam-Logo.png"
+        alt="steam"
+        onclick="openModal3()"
+      />
+
+      <div id="modal3" class="modalSteam">
+        <img
+          id="steamId"
+          class="steamImg"
+          src="/images/Steam-Logo.png"
+          alt="steam"
+          onclick="openModal3()"
+        />
+
+        <div id="modalSteam" class="modalClassSteam">
+          <span class="closeSteam" onclick="closeModal3()">&times;</span>
+          <img class="modalContentSteam" id="modalImageSteam" />
+          <p>Steam er en side der at man kan kjøpe spill og spille spill</p>
+        </div>
+      </div>
     </section>
     <ul class="footerCss" style="background-color: aquamarine">
       <p>Links</p>
+      <img class="isaacLogo" src="images/Biblethump.png" alt="Logo" />
+      <br />
       <a target="_blank" href="https://www.facebook.com/getfandom"
         ><img src="images/Facebook.webp" class="facebookimg"
       /></a>
@@ -94,5 +144,7 @@
     </ul>
     <script src="/javascript/Javascriptstuff.js"></script>
     <script src="/javascript/modal.js"></script>
+    <script src="/javascript/modal2.js"></script>
+    <script src="/javascript/modal3.js"></script>
   </body>
 </html>
