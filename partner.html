@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binding of isaac</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/imageflex.css" />
@@ -13,10 +14,10 @@
   </head>
   <body class="bodyOfSite">
     <div class="logo">
-      <img class="isaacLogo" src="images/Biblethump.png" alt="Logo" />
     </div>
     <nav class="nav">
       <ul class="nav-list">
+        <img class="isaacLogo" src="images/Biblethump.png" alt="Logo" />
         <li><a href="/index.html">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/resources.html">Resources</a></li>
@@ -79,43 +80,61 @@
     <section class="part pageformat">
       <h1>Our partners:</h1>
       <br />
-      <p>Fandom</p>
+      <div class="mainFandom"> 
+        <p>Fandom</p>
       <img
         id="fandomid"
-        class="fandomImg"
+        width="200px"
+        height="200px"
         src="images/Fandom.jpg"
         alt="fandom"
         onclick="openModal2()"
       />
       <div id="modal2" class="modalfandom">
-        <img
-          id="fandomid"
-          class="fandomImg"
-          src="images/Fandom.jpg"
-          alt="fandom"
-          onclick="openModal2()"
-        />
+        <div class="pictureFandom">
+          <img
+            id="fandomid"
+            class="fandomImg"
+            src="images/Fandom.jpg"
+            alt="fandom"
+            onclick="openModal2()"
+          />
 
-        <div id="modalfandom" class="modalclassfandom">
-          <span class="closefandom" onclick="closeModal2()">&times;</span>
-          <img class="modalcontentfandom" id="modalImagefandom" />
+          <div id="modalfandom" class="modalclassfandom">
+            <span class="closefandom" onclick="closeModal2()">&times;</span>
+            <img class="modalcontentfandom" id="modalImagefandom" />
+            <p>
+              Fandom er en webside som har mer dyp informasjon om spill, filmer,
+              medier osv. Det er mange sider om disse temaene som er "wikies"
+              som har informasjon.
+            </p>
+            <a href="https://www.fandom.com/" target="_blank">
+              <button>Fandom Link</button>
+            </a>
+          </div>
+          </div>
         </div>
       </div>
       <br />
-      <p>Steam</p>
       <br />
+      <div class="mainSteamLogo">
+        <p>Steam</p>
       <img
         id="steamId"
-        class="steamImg"
+        width="350px"
+        height="220px"
         src="/images/Steam-Logo.png"
         alt="steam"
         onclick="openModal3()"
       />
 
       <div id="modal3" class="modalSteam">
+        <div class="steamAlign">
         <img
           id="steamId"
           class="steamImg"
+          width="400px"
+          height="250px"
           src="/images/Steam-Logo.png"
           alt="steam"
           onclick="openModal3()"
@@ -125,7 +144,11 @@
           <span class="closeSteam" onclick="closeModal3()">&times;</span>
           <img class="modalContentSteam" id="modalImageSteam" />
           <p>Steam er en side der at man kan kjøpe spill og spille spill</p>
+          <a href="https://store.steampowered.com/" target="_blank">
+          <button>Steam link</button>
+        </a>
         </div>
+      </div>
       </div>
     </section>
     <ul class="footerCss" style="background-color: aquamarine">
