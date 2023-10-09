@@ -53,6 +53,7 @@
   background-color: red;
 }
 
+/* Picture of fandom */
 .mainFandom {
   border: 1px solid green;
   display: flex;
@@ -160,6 +161,7 @@
   width: 200vh;
 }
 
+/* Picture of Steam*/
 .mainSteamLogo {
   display: flex;
   border: 1px solid green;

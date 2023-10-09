@@ -1,7 +1,6 @@
 // Function to open the modal
 function openModal2() {
   let modal = document.getElementById("modal2");
-  let fandomImg = document.getElementById("fandomImg");
   let img = document.getElementById("modalfandom");
   modal.style.display = "block";
   fandomImg.src = img.src;

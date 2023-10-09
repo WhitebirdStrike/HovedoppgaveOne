@@ -1,3 +1,4 @@
+/* The navbar itself */
 .nav {
   padding: 4px 4px;
   background-color: #333;
@@ -22,6 +23,7 @@
   align-items: center;
 }
 
+/* Dropdowns for navbar and stuff in navbar */
 .dropdown {
   float: left;
 }

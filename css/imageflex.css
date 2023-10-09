@@ -1,16 +1,9 @@
+/* Images of Damocles */
 .flexDamocles {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-}
-
-.Damocles {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  flex-direction: column;
-  width: max-content; /* Adjust the width as needed */
 }
 
 .Damocles > img {
@@ -32,8 +25,9 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Modal of pictures of items*/
 .modal {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: flex-end;
   position: right;
@@ -49,6 +43,7 @@
 }
 
 .modal-content {
+  display: flex;
   width: 100px;
   max-width: 80%;
   max-height: 80%;
@@ -92,6 +87,7 @@
   align-items: center;
 }
 
+/* Flexbox for the fadein image of Bloat and Delirium */
 .fade-in-image {
   display: flex;
   justify-content: center;
@@ -99,14 +95,10 @@
   padding: 0;
   align-items: center;
   flex-direction: column;
-  width: 25%;
+  height: 8%;
+  width: 10%;
   opacity: 25%;
-  border: 2px solid green;
   transition: opacity 1s;
-}
-
-.fade-in-image > img {
-  align-self: flex-end;
 }
 
 .fade-in-image:hover {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binding of isaac</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/imageflex.css" />
@@ -13,119 +13,149 @@
   </head>
   <body class="bodyOfSite">
     <div class="logo">
-    <nav class="nav">
-      <ul class="nav-list">
+      <nav class="nav">
+        <ul class="nav-list">
+          <img class="isaacLogo" src="images/Biblethump.png" alt="Logo" />
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/resources.html">Resources</a></li>
+          <li><a href="/partner.html">Partners</a></li>
+          <li>
+            <div class="drop">
+              <button
+                class="bossButton2"
+                onclick="toggleDropdown('myDropdown2')"
+              >
+                Items
+              </button>
+              <div id="myDropdown2" class="dropdown-content2">
+                <a href="/tmTrainer.html">Tmtrainer</a>
+                <a href="/Damocles.html">Damocles</a>
+                <a href="/abel.html">Abel</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="dropdown">
+              <button class="bossButton" onclick="toggleDropdown('myDropdown')">
+                Bosses
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="/bosses.html">The Bloat</a>
+                <a href="/delirium.html">Delirium</a>
+                <li>
+                  <button id="kontaktBtn" class="btnKontakt">
+                    Kontakt oss
+                  </button>
+                  <!-- The Modal -->
+                  <div id="kontaktjs" class="kontaktmodal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <form>
+                        <label for="fname">First name:</label><br />
+                        <input
+                          type="text"
+                          id="fname"
+                          name="fname"
+                          value=""
+                        /><br />
+                        <label for="lname">Last name:</label><br />
+                        <input
+                          type="text"
+                          id="lname"
+                          name="lname"
+                          value=""
+                        /><br />
+                        <label for="epost">Epost</label><br />
+                        <input
+                          type="text"
+                          id="fname"
+                          name="epost"
+                          value=""
+                        /><br />
+                        <label for="password">Password</label><br />
+                        <input
+                          type="text"
+                          id="pass"
+                          name="passowrd"
+                          value=""
+                        /><br />
+                        <label for="description">Description</label><br />
+                        <input
+                          type="text"
+                          id="desctriptiontext"
+                          name="descriptiontext"
+                          value=""
+                          style="width: 300px; height: 100px"
+                        />
+                        <input type="submit" value="Submit" />
+                      </form>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="cssTmtrainer">
+        <img
+          class="enlargeable"
+          id="pictureTmtrainer"
+          src="images/Tmtrainer.webp"
+          alt="Click to enlarge"
+          onclick="enlargeImage()"
+        />
+        <div>
+          <p>"ZZaZZ ZZdZZiZZmZZhZZ ZZvZZ</p>
+          ZZoZZ ZZ ZZsZZlZZhZZsZZoZZaZZiZZ"
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="enlargedImg" />
+        </div>
+      </div>
+      <section class="pageformat">
+        <h1>TmTrainer</h1>
+        <p>
+          "TmTrainer" is the most chaotic item in the game by a landslide.
+          Basicly, it makes newly encountered items a random selection of 2-3
+          effects together, this may also be effects that you would not have on
+          any item that exists in the game, like spawning enemies or objects,
+          even unused sprites and such. The big problem with this item is that
+          since it has basicly infinite possitibilites, that also means that it
+          is a really unstable also. Some items that you pick up just crash your
+          game, or makes so slow that it becomes unplayable.
+        </p>
+        <p>
+          However the obvious negatives of this item, it is also one of the only
+          tier 0 items that have the ability to make the rest of the game a
+          cakewalk, by deleting enemies or just having a usable that has no
+          coolown that damages the whole room or just a on hit effect that turns
+          enemies into cards. The possibillites are endless
+        </p>
+      </section>
+      <ul class="footerCss" style="background-color: aquamarine">
+        <p>Links</p>
         <img class="isaacLogo" src="images/Biblethump.png" alt="Logo" />
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/resources.html">Resources</a></li>
-        <li><a href="/partner.html">Partners</a></li>
-        <li>
-          <div class="drop">
-            <button class="bossButton2" onclick="toggleDropdown('myDropdown2')">
-              Items
-            </button>
-            <div id="myDropdown2" class="dropdown-content2">
-              <a href="/tmTrainer.html">Tmtrainer</a>
-              <a href="/Damocles.html">Damocles</a>
-              <a href="/abel.html">Abel</a>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="dropdown">
-            <button class="bossButton" onclick="toggleDropdown('myDropdown')">
-              Bosses
-            </button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="/bosses.html">The Bloat</a>
-              <a href="/delirium.html">Delirium</a>
-              <li>
-                <button id="kontaktBtn" class="btnKontakt">Kontakt oss</button>
-                <!-- The Modal -->
-                <div id="kontaktjs" class="kontaktmodal">
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <form>
-                      <label for="fname">First name:</label><br />
-                      <input type="text" id="fname" name="fname" value="" /><br />
-                      <label for="lname">Last name:</label><br />
-                      <input type="text" id="lname" name="lname" value="" /><br />
-                      <label for="epost">Epost</label><br />
-                      <input type="text" id="fname" name="epost" value="" /><br />
-                      <label for="password">Password</label><br>
-                      <input type="text" id="pass" name="passowrd" value=""><br>
-                      <label for="description">Description</label><br />
-                      <input
-                        type="text"
-                        id="desctriptiontext"
-                        name="descriptiontext"
-                        value=""
-                        style="width: 300px; height: 100px;"
-                      />
-                      <input type="submit" value="Submit" />
-            </div>
-          </div>
-        </li>
+        <br />
+        <a target="_blank" href="https://www.facebook.com/getfandom"
+          ><img src="images/Facebook.webp" class="facebookimg"
+        /></a>
+        <a target="_blank" href="https://twitter.com/getfandom"
+          ><img src="images/Twitter.png" class="twitterimg"
+        /></a>
+        <a target="_blank" href="https://www.youtube.com/fandomentertainment"
+          ><img src="images/Youtube.png" class="youtubeimg"
+        /></a>
       </ul>
-    </nav>
-
-    <div class="cssTmtrainer">
-      <img
-        class="enlargeable"
-        id="pictureTmtrainer"
-        src="images/Tmtrainer.webp"
-        alt="Click to enlarge"
-        onclick="enlargeImage()"
-      />
-      <div>
-        <p>"ZZaZZ ZZdZZiZZmZZhZZ ZZvZZ</p>
-        ZZoZZ ZZ ZZsZZlZZhZZsZZoZZaZZiZZ"
-      </div>
-      <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="enlargedImg" />
-      </div>
-    </div>
-    <section class="pageformat">
-      <h1>TmTrainer</h1>
-      <p>
-        "TmTrainer" is the most chaotic item in the game by a landslide.
-        Basicly, it makes newly encountered items a random selection of 2-3
-        effects together, this may also be effects that you would not have on
-        any item that exists in the game, like spawning enemies or objects, even
-        unused sprites and such. The big problem with this item is that since it
-        has basicly infinite possitibilites, that also means that it is a really
-        unstable also. Some items that you pick up just crash your game, or
-        makes so slow that it becomes unplayable.
-      </p>
-      <p>
-        However the obvious negatives of this item, it is also one of the only
-        tier 0 items that have the ability to make the rest of the game a
-        cakewalk, by deleting enemies or just having a usable that has no
-        coolown that damages the whole room or just a on hit effect that turns
-        enemies into cards. The possibillites are endless
-      </p>
-    </section>
-    <div class="footerCss" style="background-color: aquamarine">
-      <p>Links</p>
-      <img class="isaacLogo" src="images/Biblethump.png" alt="Logo" />
-      <br>
-      <a target="_blank" href="https://www.facebook.com/getfandom"
-        ><img src="images/Facebook.webp" class="facebookimg"
-      /></a>
-      <a target="_blank" href="https://twitter.com/getfandom"
-        ><img src="images/Twitter.png" class="twitterimg"
-      /></a>
-      <a target="_blank" href="https://www.youtube.com/fandomentertainment"
-        ><img src="images/Youtube.png" class="youtubeimg"
-      /></a>
-    </ul>
     </div>
     <script src="/javascript/Javascriptstuff.js"></script>
     <script src="/javascript/Pictures.js"></script>
     <script src="/javascript/modal.js"></script>
+    <script src="/javascript/modaltmtrainer.js"></script>
   </body>
 </html>
